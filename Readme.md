@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Беляев](https://up.htmlacademy.ru/htmlcss-individual/1/user/2512279).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
