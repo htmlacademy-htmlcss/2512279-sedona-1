@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="#">
+      <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="#" alt="Логотип города Седона.">
       </a>
       <ul class="navigation-list">
@@ -62,21 +62,21 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-checkbox visually-hidden" type="checkbox" name="swimmingpool" checked>
+                <input class="control-checkbox visually-hidden" type="checkbox" name="infrastructure" value="swimmingpool" checked>
                 <span class="control-mark"></span>
                 <span class="control-text">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-checkbox visually-hidden" type="checkbox" name="parking" checked>
+                <input class="control-checkbox visually-hidden" type="checkbox" name="infrastructure" value="parking" checked>
                 <span class="control-mark"></span>
                 <span class="control-text">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-checkbox visually-hidden" type="checkbox" name="wi-fi">
+                <input class="control-checkbox visually-hidden" type="checkbox" name="infrastructure" value="wi-fi">
                 <span class="control-mark"></span>
                 <span class="control-text">Wi-Fi</span>
               </label>
@@ -121,7 +121,7 @@
               <span class="range-text">до</span>
             </div>
             <div class="range-scale">
-              <div class="range-bar" style="left: 0; width: 227px">
+              <div class="range-bar">
                 <button class="range-toggle toggle-min">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
@@ -138,24 +138,31 @@
         </fieldset>
       </form>
     </section>
-    <section class="inner-results">
-      <h2 class="inner-sort-text">Найдено гостиниц: 38</h2>
+    <section class="catalog-results">
+      <h2 class="visually-hidden">Результат поиска</h2>
+      <p class="inner-sort-text">Найдено гостиниц: 38</p>
       <select class="sort-select-control" aria-label="Сортировка">
         <option value="cheap" selected>Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
-      <a class="button button-grid button-current" href="#">
-        <span class="visually-hidden">Показать сетку</span>
-      </a>
-      <a class="button button-card" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button button-list" href="#">
-        <span class="visually-hidden">Показать список</span>
-      </a>
-    </section>
-    <section class="hotel-cards">
+      <ul class="result-display-type">
+        <li class="result-display-item">
+          <a class="button button-grid button-current" href="#">
+          <span class="visually-hidden">Показать сетку</span>
+          </a>
+        </li>
+        <li class="result-display-item">
+          <a class="button button-card" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+          </a>
+        </li>
+        <li class="result-display-item">
+          <a class="button button-list" href="#">
+          <span class="visually-hidden">Показать список</span>
+          </a>
+        </li>
+      </ul>
       <h2 class="visually-hidden">Карточки отелей</h2>
       <ul class="hotel-card-list">
         <li class="hotel-card-item">
@@ -166,8 +173,8 @@
           <div class="wrapper-hotel-properties">
             <span class="hotel-description">Гостиница</span>
             <span class="hotel-description">От 4000 ₽</span>
-            <a class="hotel-card-button hotel-card-button-more" href="#">Подробнее</a>
-            <a class="hotel-card-button hotel-card-button-favorite" href="#">В избранное</a>
+            <button class="button hotel-card button-details" type="button">Подробнее</button>
+            <button class="button hotel-card button-favorites" type="button">В избранное</button>
           </div>
           <div class="wrapper-hotel-rating">
             <h4 class="visually-hidden">Количество звезд</h4>
@@ -186,8 +193,8 @@
           <div class="wrapper-hotel-properties">
             <span class="hotel-description">Гостиница</span>
             <span class="hotel-description hotel-description-price">От 5000 ₽</span>
-            <a class="button hotel-card-button hotel-card-button-more" href="#">Подробнее</a>
-            <a class="button hotel-card-button hotel-card-button-favorite-in" href="#">В избранном</a>
+            <button class="button hotel-card button-details" type="button">Подробнее</button>
+            <button class="button hotel-card button-favorites" type="button">В избранное</button>
           </div>
           <div class="wrapper-hotel-rating">
             <h4 class="visually-hidden">Количество звезд</h4>
@@ -206,8 +213,8 @@
           <div class="wrapper-hotel-properties">
             <span class="hotel-description">Гостиница</span>
             <span class="hotel-description hotel-description-price">От 2500 ₽</span>
-            <a class="button hotel-card-button hotel-card-button-more" href="#">Подробнее</a>
-            <a class="button hotel-card-button hotel-card-button-favorite" href="#">В избранное</a>
+            <button class="button hotel-card button-details" type="button">Подробнее</button>
+            <button class="button hotel-card button-favorites" type="button">В избранное</button>
           </div>
           <div class="wrapper-hotel-rating">
             <h4 class="visually-hidden">Количество звезд</h4>
@@ -225,8 +232,8 @@
           <div class="wrapper-hotel-properties">
             <span class="hotel-description">Гостиница</span>
             <span class="hotel-description hotel-description-price">От 1500 ₽</span>
-            <a class="button hotel-card-button hotel-card-button-more" href="#">Подробнее</a>
-            <a class="button hotel-card-button hotel-card-button-favorite" href="#">В избранное</a>
+            <button class="button hotel-card button-details" type="button">Подробнее</button>
+            <button class="button hotel-card button-favorites" type="button">В избранное</button>
           </div>
           <div class="wrapper-hotel-rating">
             <h4 class="visually-hidden">Количество звезд</h4>
@@ -236,8 +243,6 @@
           </div>
         </li>
       </ul>
-    </section>
-    <section class="catalog-pagination">
       <h3 class="visually-hidden">Выбор страницы из результатов поиска</h3>
       <ul class="pagination">
         <li class="pagination-item">
