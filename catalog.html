@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог гостиниц Седоны</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
@@ -36,7 +37,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
+          <a class="button button-want" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -226,8 +227,6 @@
           </div>
           <div class="wrapper-hotel-rating">
             <h4 class="visually-hidden">Количество звезд</h4>
-            <div class="icon-star"></div>
-            <div class="icon-star"></div>
             <p class="hotel-rating">Рейтинг: 5,0</p>
           </div>
         </li>
@@ -254,11 +253,11 @@
         </li>
       </ul>
     </section>
-    <section class="newsletter-inner">
-      <h2 class="newsletter-title newsletter-title-inner">Подпишитесь на рассылку</h2>
-      <p class="newsletter-text newsletter-text-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="newsletter-catalog">
+      <h2 class="lead">Подпишитесь на рассылку</h2>
+      <p class="lead-subheading">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email"></label>
+        <label for="newsletter-email">Ваш e-mail для рассылки</label>
         <input class="newsletter-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
         <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>
